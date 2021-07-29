@@ -1,0 +1,168 @@
+/*---------------------------------------------------------------------------
+                        Common CSS Part
+-----------------------------------------------------------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.section-title-color{
+    color: chocolate;
+}
+a{
+    text-decoration: none;
+}
+ /* Bike banner part  */
+.banner-bg{
+    background-color: #19519b;
+}
+.banner-info p{
+    color:#E0E0E0;
+}
+.banner-button{
+    background-color: #E76F51;
+    padding: 10px 35px;
+}
+
+/* Feature part  */
+.fetured-section-title{
+    position:relative;
+}
+.fetured-section-title small{
+    color:#E76F51;
+}
+.fetured-section-title::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #E76F51;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Feture-img-grayscale{
+    filter: grayscale(100%);
+}
+
+/* Client Part  */
+.clients-info-pragraph{
+    color: #6C6C6C;
+}
+.socal-icon{
+    color: #E77C40;
+    font-size: 18px;
+}
+.socal-icon .fa-star{
+    margin: 10px 3px;
+}
+.clients-info-name{
+    color: #23A6F0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.accordion-button {
+    border: 1px solid #D5E5FB;
+    border-radius: 5px;
+}
+.accordion-item h2 button{
+    color:#383838;
+    font-size: 20px;
+}
+.accordion-body p{
+    color: #7E848C;
+    font-size:16px;
+}
+
+/* Select Bike part  */
+.bike-item{
+    background-color:#e0e4f1;
+}
+.bike-image{
+    position: relative;
+    overflow: hidden;
+}
+.image-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0,0,0,0.7);
+    transition: all .3s linear;
+}
+.image-overlay i {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #E76F51;
+    font-size:24px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.bike-item:hover .image-overlay{
+    left:0%;
+}
+.bike-item p,h4{
+    color: #6C6C6C;
+}
+.model a{
+    font-size:24px;
+    color: #000000;
+    transition:.3s linear;
+}
+.model a:hover{
+    color:#c76046 ;
+}
+
+.bike-item-price{
+    color:#e78a72 ;
+}
+
+
+/* Select Bike part in various device */
+
+@media only screen and (max-width: 576px) {
+    /* banner part */
+    .banner-bg{
+        padding: 100px 0;
+    }
+    .banner-info{
+        padding-bottom:40px;
+    }
+    /* featured part */
+    .Fetured-image{
+        margin-bottom: 50px;
+    }
+    /* Choose Motorcyle part */
+    .model a{
+        font-size: 18px;
+    }
+    .model p{
+        font-size: 14px;
+    }
+    .bike-item-info h4{
+        font-size:18px;
+    }
+    .bike-item-info p{
+        font-size:16px;
+    }
+  }
+
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    /* banner part */
+    .banner-info{
+        padding-bottom:50px;
+    }
+     /* featured part */
+    .Fetured-image{
+        margin-bottom: 50px;
+    }
+  }
